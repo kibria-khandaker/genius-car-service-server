@@ -109,7 +109,7 @@ run().catch(console.dir)
 
 //------------
 app.get('/', (req, res) => {
-    res.send('Running Genius Server')
+    res.send('Running Genius Server Bro.')
 });
 
 app.listen(port, () => {
