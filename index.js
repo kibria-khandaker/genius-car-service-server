@@ -113,7 +113,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/kibria', (req, res) => {
-    res.send('hi, i am kibria, this API for you you can read my name from here')
+    res.send('Hi, i am kibria, this API for you. So, you can read my name from here')
 });
 
 app.listen(port, () => {
