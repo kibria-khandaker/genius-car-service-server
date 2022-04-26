@@ -16,7 +16,7 @@ function verifyJWT(req, res, next) {
     const authHeader = req.headers.authorization;
     console.log('inside verifyJWT', authHeader);
     if(!authHeader) {
-        return res.status(401).send({ message: 'You are unauthorized to Access' });
+        return res.status(401).send({ message: '401 || So, You are unauthorized to Access' });
     }
     const token = authHeader.split(' ')[1];
     console.log('my token ', token);
@@ -110,6 +110,10 @@ run().catch(console.dir)
 //------------
 app.get('/', (req, res) => {
     res.send('Running Genius Server Bro.')
+});
+
+app.get('/kibria', (req, res) => {
+    res.send('hi, i am kibria, this API for you you can read my name from here')
 });
 
 app.listen(port, () => {
